@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- onmouseover och onmouseout-->
+    <h2>onmouseover() och onmouseout()</h2>
+    <div class="mouse" onmouseover="over(this)" onmouseout="out(this)">Placera musen över mig!</div>
+    <br>
+
+    <!-- Onclick event på knapp-->
+    <h2>Onclick event på knapp</h2>
+    <button class="btn" onclick="this.innerHTML='Howdy!'">Tryck här!</button>
+
+    <!--onclick event med funktion -->
+    <h2>Onclick event med funktion</h2>
+    <button class="btn" id="btn1">Se datum</button>
+
+    <h3 id="date"></h3>
+
+    <!-- onsubmit med alert ruta-->
+    <h2>onsubmit med alert</h2>
+  <form onsubmit="myFunction()">
+    Enter name: <input type="text">
+    <input type="submit">
+  </form>
+  <!--Array med bilar -->
+    <h2>Arrays med bilar</h2>
+    <h3 id="array-cars"></h3>
+
+  <!--If-statment med switch -->
+    <h2>Switch-Statement</h2>
+    <p id="switch"></p>
+
+<!--onsubmit med formulär validering -->
+  <h2>onsubmit med formulär validering</h2>
+      <form onsubmit="return false">
+        <label>Username:</label><br>
+        <input type="text" size="15" id="username"><br>
+        <label>Password:</label><br>
+        <input type="password" size="15" id="password"><br>
+        <input type="submit" value="Submit" onclick="formValidation()">
+       </form>
+       <br><p id="demo"></p>
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

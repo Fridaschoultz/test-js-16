@@ -1,0 +1,13 @@
+.btn{
+    background-color:#8b0000;
+    font-size: 36px;
+    border-radius: 10px;  
+}
+
+.mouse{
+    background-color:darkorange;
+    width:250px;
+    height:20px;
+    padding:40px;
+    font-size: 20px;
+}
