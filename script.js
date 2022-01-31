@@ -30,18 +30,42 @@ function myFunction() {
     const hour = new Date().getHours(); // med new date skapar vi en egen behållare i hour för vår tid, ny instans
     let message;
     switch (hour) {
-        case 7, 8, 9, 10:
+        case 7: case 8: case 9: case 10:
             message = "God Morgon!";
             break;
-        case 11, 12, 13, 14, 15, 16:
+        case 11: case 12: case 13: case 14: case 15: case 16:
             message = "God Eftermiddag!";
             break;
-    
+        case 17: case 18: case 19: case 20: case 21: case 22: case 23:
+                message = "God Kvall!";
+                break;
         default:
-            message = "God Kvall!";
+            message = "God Natt";
+            break;
     }
     
-    document.getElementById("switch").innerHTML = message;
+    document.getElementById("switch").innerHTML = message; 
+
+    // if-sats
+    /*
+    const hour = new Date().getHours(); 
+    let message;
+    if(hour < 10)
+    {
+        message = "God Morgon!";
+    }
+    else if(hour <= 16)
+    {
+        message = "God Eftermiddag!";
+    }
+    else
+    {
+        message = "God KvÃ¤ll!";
+    }
+    
+    document.getElementById("if").innerHTML = message;
+    */
+    
 
 
 
